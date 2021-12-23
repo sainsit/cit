@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+
+    <link href="img/favicon.png" rel="icon">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="lib/select2/select2.min.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/style_registration.css" rel="stylesheet" media="all">
+    <link href="css/nav.css" rel="stylesheet" media="all">
+</head>
+
+<body style="overflow-x: hidden;">
+    <header id="header" class="fixed-top">
+        <div class="container">
+            <div class="logo float-left">
+                <a href="#intro" class="scrollto d-flex"><img src="img/favicon.png" alt="logo" class="img-fluid">
+                    <h1>CIT</h1>
+                </a>
+            </div>
+            <nav class="main-nav float-right d-none d-lg-block">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class=""><a href="registration.html">Registration</a></li>
+                    <li class="drop-down"><a href="#">More</a>
+                        <ul>
+                            <li><a href="index.html#gallery">Gallery</a></li>
+                            <li><a href="index.html#about">About us</a></li>
+                            <li><a href="index.html#contact">Contact us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="page-wrapper p-t-130 p-b-100 font-poppins" style="background-color: #def; padding-left: 10px; padding-right: 10px;">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-4">
+                <div class="card-body">
+                    <h2 class="title" style="font-weight: 500;">Registration</h2>
+                    <form method="POST" action="registration.php">
+                        <div class="row- row--space">
+                            <div style="width: 100%;">
+                                <div class="input-group">
+                                    <label class="label">Nama Lengkap</label>
+                                    <input class="input--style-4" type="text" name="nama_lengkap" required>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row- row--space">
+                            <div class="col-">
+                                <div class="input-group">
+                                    <label class="label">Kelas</label>
+                                    <div class="input-group-icon">
+                                        <input class="input--style-4" type="text" name="kelas" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-">
+                                <div class="input-group">
+                                    <label class="label">Gender</label>
+                                    <div class="p-t-10">
+                                        <label class="radio-container m-r-45">Laki-laki
+                                            <input type="radio" checked="checked" name="gender" value="l" required>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="radio-container">Perempuan
+                                            <input type="radio" name="gender" value="p" required>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label class="label">Jurusan</label>
+                            <div class="rs-select2 js-select-simple select--no-search" style="width: 100%;">
+                                <select name="jurusan">
+                                    <option disabled="disabled" selected="selected">Choose option</option>
+                                    <option data-name="tkj" name="tkj" value="tkj">Teknik Komputer Jaringan</option>
+                                    <option data-name="ki" name="ki" value="ki">Kimia Industri</option>
+                                    <option data-name="jb" name="jb" value="jb">Tata Boga</option>
+                                    <option data-name="bs" name="bs" value="bs">Tata Busana</option>
+                                    <option data-name="tk" name="tk" value="tk">Tata Kecantikan</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                        <div class="row- row--space">
+                            <div class="col-">
+                                <div class="input-group">
+                                    <label class="label">Email</label>
+                                    <input class="input--style-4" type="email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="col-">
+                                <div class="input-group">
+                                    <label class="label">No. Telp/WA</label>
+                                    <input class="input--style-4" type="text" name="phone" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-t-15">
+                            <button class="btn btn--radius-2 btn--blue" type="submit" name="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="custom-shape-divider-bottom-1608280780" style="background: #def;">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        </svg>
+    </div>
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row d-flex">
+
+                    <div class="col-lg col-md footer-info">
+                        <h3>CIT</h3>
+                        <p>Central Intelligence of Technology (CIT) satu satunya ekstrakurikuler yang mengunsung tema IT. CIT terbentuk tanggal 18 September 2019. Diresmikannya CIT pada tahun 2019 dengan menunggu kebijakan kesiswaan untuk surat keterangan
+                            sebagai ekstrakurikuler. Rencana awal CIT sendiri sudah ada sejak 2015, tetapi pada saat itu tidak terpikirkan sebagai ekstrakurikuler.</p>
+                    </div>
+
+                    <div class="col-lg col-md footer-links ml-lg-5">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="index.html#about">About us</a></li>
+                            <li><a href="registration.html">Registration</a></li>
+                            <li><a href="index.html#gallery">Gallery</a></li>
+                            <li><a href="index.html#contact">Contact us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg col-md footer-contact">
+                        <h4>Contact Us</h4>
+                        <p>
+                            Jl. R.A.A Wiranata Kusumah No.11,<br> Baleendah, Kec. Baleendah,<br> Bandung, Jawa Barat 40375<br>
+                            <strong>Phone:</strong> +62 857-9546-4781<br>
+                            <strong>Email:</strong> citsmkn2be@gmail.com<br>
+                        </p>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/central_it2019/" class="instagram"><i class="fa fa-instagram"></i></a>
+                            <a href="https://wa.me/6285795464781" class="whatsapp"><i class="fa fa-whatsapp"></i></a>
+                            <a href="https://mail.google.com/mail/u/0/#search/citsmkn2be@gmail.com" class="google-plus"><i class="fa fa-google"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong>Central Intelligence of Tecnology</strong>. All Rights Reserved
+            </div>
+        </div>
+    </footer>
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/select2/select2.min.js"></script>
+    <script src="lib/mobile-nav/mobile-nav.js"></script>
+
+    <script src="js/script_index.js"></script>
+    <script src="js/script_registration.js"></script>
+    <script src="js/haha.js"></script>
+</body>
+
+</html>
